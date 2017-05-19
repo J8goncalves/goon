@@ -1,0 +1,44 @@
+.caixaMenu {
+  background-color:#FF904E;
+  height:100px;
+  border-radius:10px;
+  color:white;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.destaque {
+  width:33%;
+  float: left;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.imgDesigner {
+  border-radius:50%;
+  border: 1px solid #FF9800;
+}
+
+.textoCaixaMenu {
+    font-weight: 100;
+}
+
+.caixaComprarNeuronio {
+    border: 2px solid #FF904E;
+    border-radius: 10px;
+    height: 120px;
+    margin-top:10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.valorNeuronio {
+    font-size: 20px;
+    color:#FF904E;
+}
+
+input {
+  width: 100%;
+}
