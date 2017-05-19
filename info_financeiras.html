@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Go On!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="js/angular.js"></script>
+
+	</head>
+	<body ng-app="goon" ng-controller="Controller">
+
+		<div data-role="page">
+
+			<nd2-include data-src="includes/menu.html"></nd2-include>
+
+			<nd2-include data-src="includes/cabecalho.html"></nd2-include>
+
+			<div role="main" class="ui-content col-md-4 col-md-offset-4" data-inset="false">
+
+
+				<div class="col-sm-12 col-md-12" align="center">
+					<h3>Informações financeiras</h3>
+				</div>
+
+				<form>
+
+				<div class="col-sm-12 col-md-12" align="center">
+					<br>
+					<button type="button" id="add_cartao">Adicionar cartão de crédito <i class="zmdi zmdi-card"></i></button>
+				</div>
+
+				<div class="row" id="info_cartao" style="display:none;">
+
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="box">
+							<br>
+							<label for="nome_titular">Nome do titular:</label>
+	            <input type="text" name="nome_titular" id="nome_titular" data-clear-btn="true" required>
+
+							<label for="cartao">Número do cartão:</label>
+	            <input type="text" name="cartao" id="cartao" data-clear-btn="true" onkeyup="somenteNumeros(this); formataCartao(this)" maxlength="19" required>
+
+							<label for="validade_cartao">Validade:</label>
+	            <input type="text" name="validade_cartao" id="validade_cartao" placeholder="MM/AA" onkeyup="somenteNumeros(this); formataValidadeCartao(this)" data-clear-btn="true" maxlength="5" required>
+
+	            <label for="cod_seguranca">Cód. Segurança:</label>
+	            <input type="text" name="cod_seguranca" id="cod_seguranca" onkeyup="somenteNumeros(this);" data-clear-btn="true"maxlength="3" required>
+
+							<br>
+
+							<button type="submit">Adicionar cartão <i class="zmdi zmdi-badge-check"></i></button>
+
+            </div>
+
+        </div>
+
+				</div>
+
+				</form>
+
+			</div>
+
+			<nd2-include data-src="includes/rodape.html"></nd2-include>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script src="js/javascript.js"></script>
+
+		<script>
+			$('#add_cartao').click(function(){
+				$('#info_cartao').show();
+			});
+		</script>
+
+	</body>
+</html>

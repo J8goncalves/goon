@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Go On!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="js/angular.js"></script>
+
+	</head>
+	<body ng-app="goon" ng-controller="Controller">
+
+		<div data-role="page">
+
+			<nd2-include data-src="includes/menu.html"></nd2-include>
+
+			<nd2-include data-src="includes/cabecalho.html"></nd2-include>
+
+			<div role="main" class="ui-content col-md-4 col-md-offset-4" data-inset="false">
+				<img src="img/btnDestaques.png" width="100%">
+				<a ng-repeat="x in designersDestaque" href="designer.html">
+				<div class="destaque" align="center">
+					<img class="imgDesigner" src="{{x.imagem}}" width="90%"><br>
+					<span>{{x.nome}}</span>
+				</div>
+				</a>
+				<a href="#"><img src="img/btnSaldo.png" width="100%"></a>
+				<a href="#"><img src="img/btnPS.png" width="100%"></a>
+				<a href="#"><img src="img/btnPC.png" width="100%"></a>
+				<a href="#"><img src="img/btnPA.png" width="100%"></a>
+			</div>
+
+			<nd2-include data-src="includes/rodape.html"></nd2-include>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script src="js/javascript.js"></script>
+
+	</body>
+</html>

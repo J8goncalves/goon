@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Go On!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="js/angular.js"></script>
+
+	</head>
+	<body ng-app="goon" ng-controller="Controller">
+
+		<div data-role="page">
+
+			<nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="novo_projeto.html" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><img src="img/plus.png" width="35px"></a>
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<div width="100%" align="center"><a href="index_usuario.html"><img src="img/logo.png" height="50px" style="margin:5px;"></a></div>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+        <img src="img/btnSaibaMaisNeuronios.png" width="100%">
+        <div class="row center" style="margin-top:10px">
+          <div class="col-xs-6 caixaComprarNeuronio" ng-repeat="x in comprarNeuronios">
+              <div class="col-xs-12">
+              <img src="img/neuronio.png" width="60px">
+              </div>
+              <div class="col-xs-12">
+              <span class="valorNeuronio">x {{x.valor}}</span>
+              </div>
+          </div>
+        </div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" style="background-color:#FF9800" class="wow fadeInUp" data-wow-delay="0.2s">
+
+				<div class="row center-xs">
+					<div class="col-xs-3">
+						<div class="box">
+							<a href="index_usuario.html" class="ui-btn ui-mini"><img src="img/home.png" height="30px"></a>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="box">
+							<a href="#" class="ui-btn ui-mini"><img src="img/compra.png" height="30px"></a>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="box">
+							<a href="#" class="ui-btn ui-mini"><img src="img/square.png" height="30px"></a>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="box">
+							<a href="#" class="ui-btn ui-mini"><img src="img/chat.png" height="30px"></a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script src="js/javascript.js"></script>
+
+	</body>
+</html>
