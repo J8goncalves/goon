@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('./goon/sw.js')
+             .register('https://phtrind.github.io/goon/sw.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
 
