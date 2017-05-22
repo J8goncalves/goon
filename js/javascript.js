@@ -1,3 +1,10 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('sw.js')
+             .then(function() { console.log('Service Worker Registered'); });
+  }
+
+
 function somenteNumeros(num) {
     var er = /[^0-9.* .*/.]/;
     er.lastIndex = 0;
