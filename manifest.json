@@ -22,7 +22,7 @@
       "sizes": "256x256",
       "type": "image/png"
     }],
-  "start_url": "index_usuario.html",
+  "start_url": "login.html",
   "display": "fullscreen",
   "background_color": "#FF9800",
   "theme_color": "#FF9800"
