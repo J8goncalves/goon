@@ -26,7 +26,6 @@
 }
 
 .caixaComprarNeuronio {
-    border: 2px solid #FF904E;
     border-radius: 10px;
     height: 120px;
     margin-top:10px;
@@ -34,11 +33,24 @@
     padding-top: 10px;
 }
 
+.caixaComprarNeuronio:hover {
+    border: 2px solid #FF904E;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #dddbdb;
+}
+
 .valorNeuronio {
     font-size: 20px;
     color:#FF904E;
 }
 
-input {
-  width: 100%;
+.listaDesigners {
+  float:left;
+  width: 33%;
 }
+
+ .listaPortfolio {
+   float:left;
+   width: 33%;
+ }
