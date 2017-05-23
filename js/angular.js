@@ -4,24 +4,57 @@ app.controller('Controller', function ($scope, $http) {
 $scope.usuarioLogado = {
       codigo: 1,
       nome: 'Thiers',
-      imagem: 'http://tribzap2it.files.wordpress.com/2011/04/nic-cage-gi.jpg'
+      imagem: 'img/nic_cage.jpg'
   }
 
 $scope.designersDestaque = [
   {
       codigo: 1,
       nome: 'Marcelo',
-      imagem: 'http://tribzap2it.files.wordpress.com/2011/04/nic-cage-gi.jpg'
+      imagem: 'img/nic_cage.jpg'
   },
   {
       codigo: 2,
       nome: 'Robson',
-      imagem: 'http://www.menshairstylestoday.com/wp-content/uploads/2016/05/Leonardo-DiCaprio-Haircut.jpg'
+      imagem: 'img/leo_caprio.jpg'
   },
   {
       codigo: 3,
       nome: 'Bruno',
-      imagem: 'http://4.bp.blogspot.com/_9EQwVWPdVNo/TRKMhw5daSI/AAAAAAAAAGE/RgSintq9gq0/s1600/Brad-Pitt05.jpg'
+      imagem: 'img/brad_pitt.jpg'
+  }
+]
+
+$scope.listaDes = [
+  {
+      codigo: 1,
+      nome: 'Nome',
+      imagem: 'https://image.freepik.com/icones-gratis/usuario-masculino-imagem-no-perfil_318-37825.jpg'
+  },
+  {
+      codigo: 2,
+      nome: 'Nome',
+      imagem: 'https://image.freepik.com/icones-gratis/usuario-masculino-imagem-no-perfil_318-37825.jpg'
+  },
+  {
+      codigo: 3,
+      nome: 'Nome',
+      imagem: 'https://image.freepik.com/icones-gratis/usuario-masculino-imagem-no-perfil_318-37825.jpg'
+  },
+  {
+      codigo: 4,
+      nome: 'Nome',
+      imagem: 'https://image.freepik.com/icones-gratis/usuario-masculino-imagem-no-perfil_318-37825.jpg'
+  },
+  {
+      codigo: 5,
+      nome: 'Nome',
+      imagem: 'https://image.freepik.com/icones-gratis/usuario-masculino-imagem-no-perfil_318-37825.jpg'
+  },
+  {
+      codigo: 6,
+      nome: 'Nome',
+      imagem: 'https://image.freepik.com/icones-gratis/usuario-masculino-imagem-no-perfil_318-37825.jpg'
   }
 ]
 
