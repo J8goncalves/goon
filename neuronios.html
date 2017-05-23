@@ -4,6 +4,8 @@
 		<title>Go On!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+		<link rel="manifest" href="manifest.json">
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
 		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
@@ -31,7 +33,7 @@
         <a href=""><img src="img/btnSaibaMaisNeuronios.png" width="100%"></a>
 				<div class="col-xs-10 col-xs-offset-1">
         	<div class="row center" style="margin-top:10px">
-          	<div class="col-xs-6 caixaComprarNeuronio" ng-repeat="x in comprarNeuronios">
+          	<div class="col-xs-6 caixaComprarNeuronio" ng-repeat="x in comprarNeuronios" onclick="location.href='info_financeiras.html'">
               <div class="col-xs-12">
               	<img src="img/neuronio.png" width="60px">
               </div>
